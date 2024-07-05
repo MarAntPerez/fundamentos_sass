@@ -42,10 +42,32 @@ header{
         background-color: $color-secundario;
     }
 
-    a{
-        color: $color-claro;
-        &:hover{
-            color: darkblue;
-        }
+    // a{
+    //     color: $color-claro;
+    //     &:hover{
+    //         color: darkblue;
+    //     }
+    // }
+}
+
+/* Herencia */
+%btn-general{
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 1rem 2rem;     
+}
+
+.btn{
+    &-claro{
+        @extend %btn-general;
+        background-color: #ccc;
+    }
+
+    &-oscuro{
+        @extend %btn-general;
+        background-color: #191919;
     }
 }

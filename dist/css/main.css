@@ -26,7 +26,18 @@ header {
     background-color: blue; }
   .article-b {
     background-color: orange; }
-  .article a {
-    color: #f4f4f4; }
-    .article a:hover {
-      color: darkblue; }
+
+/* Herencia */
+.btn-claro, .btn-oscuro {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  margin: 1rem 2rem; }
+
+.btn-claro {
+  background-color: #ccc; }
+
+.btn-oscuro {
+  background-color: #191919; }
