@@ -9,8 +9,8 @@ body {
   line-height: 1.6; }
 
 header {
-  background-color: #f4f4f4;
-  color: #333;
+  background-color: #333;
+  color: #fff;
   padding: 1rem; }
   header h1 {
     text-align: center;
@@ -23,7 +23,8 @@ header {
   .article p {
     font-size: 1.2rem; }
   .article-a {
-    background-color: blue; }
+    background-color: #000;
+    color: #fff; }
   .article-b {
     background-color: orange; }
 
@@ -38,6 +39,14 @@ header {
 
 .btn-claro {
   background-color: #ccc; }
+  .btn-claro:hover {
+    transform: rotate(30deg);
+    --webkit-transform: $propiedad;
+    --ms-transform: $propiedad; }
 
 .btn-oscuro {
   background-color: #191919; }
+  .btn-oscuro:hover {
+    transform: rotate(30deg);
+    --webkit-transform: $propiedad;
+    --ms-transform: $propiedad; }

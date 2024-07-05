@@ -1,4 +1,5 @@
 @import 'variables';
+@import 'funcions';
 
 *{
     margin: 0;
@@ -13,8 +14,9 @@ body{
 }
 
 header{
-    background-color: $color-claro;
-    color: $color-oscuro;
+    background-color: $color-oscuro;
+    // color: $color-oscuro;
+    color: configurar-color-texto($color-oscuro);
     padding: 1rem;
 
     h1{
@@ -35,7 +37,8 @@ header{
     }
 
     &-a{
-        background-color: $color-primario;
+        background-color: configurar-color-texto($color-claro);
+        color: configurar-color-texto($color-oscuro);
     }
 
     &-b{
@@ -64,10 +67,16 @@ header{
     &-claro{
         @extend %btn-general;
         background-color: #ccc;
+        &:hover{
+            @include transform(rotate(30deg));
+        }
     }
 
     &-oscuro{
         @extend %btn-general;
         background-color: #191919;
+        &:hover{
+            @include transform(rotate(30deg));
+        }
     }
 }
