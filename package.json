@@ -1,0 +1,12 @@
+{
+  "name": "fundamentos_sass",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "Fundamentois de sass"
+}
